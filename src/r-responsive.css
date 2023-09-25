@@ -1,0 +1,58 @@
+@media screen and (min-width: 360px) and (max-width:480px) {
+.contact-container{
+    flex-direction: column;
+}
+.inside-contact-container{
+
+    width: 100%;
+    width: 300px;
+   padding-left: 15px;
+   margin-bottom: 10px;
+}
+.contact-inp{
+    width: 300px;
+
+}
+.message-form{
+    padding: 15px;
+    font-size: 50px;
+}
+footer{
+    flex-direction: column;
+}
+.footer-container{
+    width: 100%;
+  }
+  .projects{
+    width: 200px;
+    height: 200px;
+  }
+ 
+ .info1{
+    margin-left: 10%;
+  }
+  .footer-titles{
+    margin-bottom: 5px;
+  }
+  .div1{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width:1024px){
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inside-contact-container{
+        width: 100%;
+        width: 300px;
+       padding-left: 15px;
+       margin-bottom: 20px;
+       
+    }
+    .slide {
+        flex: 0 0 25%;
+    }
+}
