@@ -1,0 +1,134 @@
+@media screen and (min-width: 360px) and (max-width:480px) {
+    .title{
+        font-size:40px;
+        font-weight: bold;
+        color:#3066BE;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .content{
+        color: white;
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .c{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about{
+        display: block;
+    }
+    .image1{
+        width: 230px;
+        height: 230px;
+        border-radius: 10px;
+    }
+    .image{
+        display: flex;
+        justify-content: center; 
+        margin:auto ;
+    }
+    .dCV{
+        width: 200px;
+        height: 50px;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid #3066BE;
+        color: white;
+    }
+    .dCV:hover{
+        background-color: #3066BE;
+        border:0px;
+    }
+    .skill{
+        width: 50px;
+        height: 50px;
+        margin-right: 4%;
+        filter: grayscale(100%);
+    }
+    .skill1{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .skill:hover {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+      }
+          
+}
+@media screen and (min-width: 481px) and (max-width:1024px) {
+    .title{
+        font-size:50px;
+        font-weight: bold;
+        color:#3066BE;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .content{
+        color: white;
+        width: 50%;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+    .c{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        width: 40%;
+    }
+    .image1{
+        width: 230px;
+        height: 230px;
+        border-radius: 10px;
+    }
+    .dCV{
+        width: 200px;
+        height: 50px;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid #3066BE;
+        color: white;
+    }
+    .dCV:hover{
+        background-color: #3066BE;
+        border:0px;
+    }
+
+    .title{
+        font-size:50px;
+        font-weight: bold;
+        color:#3066BE;
+        margin: auto;
+    }
+    .skill{
+        width: 70px;
+        height: 70px;
+        margin-right: 4%;
+        filter: grayscale(100%);
+    }
+    .skill1{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .skill:hover {
+        filter: grayscale(0%);
+        transform: scale(1.5);
+      }  
+    
+}
