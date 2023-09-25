@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Contact from "./components/Contact";
+import Projects from "./components/project";
+import test from "./images/i2.jpg"
+import Footer from "./components/footer"
+import ProjectSlider from "./components/ProjectSlider";
+
+
+const projects = [
+  { title: "Project 1", image: test, description: "Description 1" },
+  { title: "Project 2", image: test, description: "Description 2" },
+  { title: "Project 3", image: test, description: "Description 3" },
+  { title: "Project 4", image: test, description: "Description 4" },
+
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="project-container">
+      <p className="title">Projects</p>
+      <ProjectSlider projects={projects} />
+      </div>
+
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
