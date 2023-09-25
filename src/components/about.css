@@ -1,0 +1,44 @@
+.title{
+    font-size:50px;
+    font-weight: bold;
+    color:#3066BE;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.content{
+    color: white;
+    width: 50%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.c{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+}
+.image{
+    width: 40%;
+}
+.image1{
+    width: 290px;
+    height: 230px;
+    border-radius: 10px;
+}
+.dCV{
+    width: 200px;
+    height: 50px;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #3066BE;
+    color: white;
+}
+.dCV:hover{
+    background-color: #3066BE;
+    border:0px;
+}

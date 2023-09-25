@@ -1,0 +1,22 @@
+.title{
+    font-size:50px;
+    font-weight: bold;
+    color:#3066BE;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.skill{
+    width: 70px;
+    height: 70px;
+    margin-right: 4%;
+    filter: grayscale(100%);
+}
+.skill1{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.skill:hover {
+    filter: grayscale(0%);
+    transform: scale(1.5);
+  }
+  
