@@ -1,13 +1,147 @@
-body {
+body{
+  overflow-x: hidden;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #1E1E1E;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #1E1E1E;
+  border: none;
+}
+section div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Bluediv {
+  background-color: #3066BE;
+  width: 150px;
+  height: 140px;
+  margin-top: 15px;
+  border-radius: 20%;
+  align-items: center;
+}
+section  p:nth-child(3) {
+  color:white;
+  font-size: 20px;
+
+}section  p:nth-child(2) {
+  color:white;
+  font:bold;
+  font-size: 25px;
+}
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  }
+.PenBackround{
+    width: 100%; 
+    height: 400px; 
+    background-image: url('./images/pen.jpg'); 
+    background-size: 100% 100%; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    border: 1px solid #1E1E1E; 
+}
+.PenBackround p{
+  color: #3066BE;
+  margin-left: 300px;
+  font:bold;
+  font-size: 50px;
+}
+
+.header p{
+  color:#3066BE;
+  margin: 20px;
+font-size: 25px;
+  }
+  
+.image{
+  width: 100%;
+  height: 100%;
+}
+.TitleP{
+  display: flex;
+  flex-direction: column;
+  color: #3066BE;
+  margin-left: 10px;
+  font:bold;
+  font-size: 50px;
+}
+.TitleP p:nth-child(2){
+  margin-left: 400px;
+}
+@media screen and (min-width: 360px) and (max-width:480px) {
+  .header{
+    justify-content: center;
+    margin-right: 5px;
+}
+  .header p{
+    margin: 10px;
+    font-size: 20px;
+  }
+  .TitleP p:nth-child(2) {
+    margin-left: 80px;
+}
+.TitleP {
+  align-items: start;
+  justify-content: start;
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section  p:nth-child(3) {
+    font-size: 12x;
+  }
+}
+@media screen and (min-width: 481px) and (max-width:1024px){
+  .header p {
+    font-size: 25px;
+  }
+  .PenBackround p {
+    margin-left: 90px;
+  }
+  .container{
+    height: 100%;
+  }
+  
+  .TitleP p:nth-child(2) {
+    margin-left: 200px;
+}
+    section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Bluediv {
+      width: 200px;
+      height: 200px;
+    }
+    .image{
+      width: 200px;
+      height: 200px;
+      margin-top: 15px;
+    }
+    section  p:nth-child(2) {
+    font-size: 40px;
+  }
+  section  p:nth-child(3) {
+    font-size: 30px;
+  }
 }
