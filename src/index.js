@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './header-style.css';
 import App from './App';
 import './r-responsive.css';
 import './style.css';

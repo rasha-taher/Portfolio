@@ -44,11 +44,26 @@ section p:nth-child(2) {
   margin-bottom: 50px;
   padding: 0px;
 }
-.header {
+.header-menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  list-style: none;
+}
+
+.header-menu li {
+  color: #3066be;
+  margin: 20px;
+  font-size: 25px;
+}
+.header-menu li a{
+  text-decoration: none;
+  color: #3066be;
+}
+
+.header-menu li a:hover{
+  color: white;
 }
 .PenBackround {
   width: 100%;
@@ -66,15 +81,13 @@ section p:nth-child(2) {
   font-size: 50px;
 }
 
-.header p {
-  color: #3066be;
-  margin: 20px;
-  font-size: 25px;
+.blue-image {
+  width: 100px;
+  height: 100px;
 }
-
-.image {
-  width: 200px;
-  height: 200px;
+.blue-image:hover{
+  width:120px;
+  height:120px;
 }
 
 .TitleP {

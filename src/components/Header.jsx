@@ -8,13 +8,13 @@ const Header = () => {
   return (
     <div className="container">
       <div className="PenBackround">
-        <div className="header">
-          <p>Home</p>
-          <p>About</p>
-          <p>Skills</p>
-          <p>Project</p>
-          <p>Contact</p>
-        </div>
+        <ul className="header-menu">
+          <li> <a href="#"> Home</a></li>
+          <li> <a href="#">About </a></li>
+          <li> <a href="#">Skills </a></li>
+          <li> <a href="#">Project </a></li>
+          <li> <a href="#">Contact </a> </li>
+        </ul>
 
         <div className="TitleP">
           <p className="name-title">
@@ -26,7 +26,7 @@ const Header = () => {
       <section>
         <div className="bule-continer">
           <div className="Bluediv">
-            <img src={Fast} className="image"></img>
+            <img src={Fast} className="blue-image"></img>
           </div>
           <p className="sub-titles">Fast</p>
           <p>
@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         <div className="bule-continer">
           <div className="Bluediv">
-            <img src={responsive} className="image"></img>
+            <img src={responsive} className="blue-image"></img>
           </div>
           <p className="sub-titles">Responsive</p>
           <p>
@@ -47,7 +47,7 @@ const Header = () => {
         </div>
         <div className="bule-continer">
           <div className="Bluediv">
-            <img src={intuitive} className="image"></img>
+            <img src={intuitive} className="blue-image"></img>
           </div>
           <p className="sub-titles">Itituative</p>
           <p>
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
         <div className="bule-continer">
           <div className="Bluediv">
-            <img src={Dynamic} className="image"></img>
+            <img src={Dynamic} className="blue-image"></img>
           </div>
           <p className="sub-titles">Dynamic</p>
           <p>
