@@ -12,8 +12,8 @@ import html from "../Svgs/html1.svg";
 const Skills= ()=>{
     return( 
         <div>
-                <p  className="title">Skills</p>
             <div className="skill1">
+                <p  className="title">Skills</p>
                 <img className="skill" src={html}></img>
                 
                 <img className="skill" src={figma}></img>

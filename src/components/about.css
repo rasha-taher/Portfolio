@@ -37,8 +37,10 @@
     background-color: transparent;
     border: 1px solid #3066BE;
     color: white;
+    font-size: 15px;
 }
 .dCV:hover{
     background-color: #3066BE;
     border:0px;
+    font-size: 17px;
 }

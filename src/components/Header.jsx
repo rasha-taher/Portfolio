@@ -35,6 +35,7 @@ const Header = () => {
             highes priority
           </p>
         </div>
+        
         <div className="bule-continer">
           <div className="Bluediv">
             <img src={responsive} className="blue-image"></img>
