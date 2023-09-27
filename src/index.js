@@ -4,6 +4,7 @@ import './header-style.css';
 import App from './App';
 import './r-responsive.css';
 import './style.css';
+import './a-responsive.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

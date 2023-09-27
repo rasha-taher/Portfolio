@@ -1,63 +1,125 @@
-@media screen and (min-width: 360px) and (max-width:480px) {
-  .header{
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  .PenBackround{
+    height: 400px;
+  }
+  .header-menu {
     justify-content: center;
     margin-right: 5px;
-}
-  .header p{
-    margin: 10px;
+  }
+  .header-menu li {
+    margin: 5px;
+  }
+  .header-menu li a {
+    margin: 5px;
     font-size: 20px;
   }
-  .TitleP p:nth-child(2) {
-    margin-left: 80px;
-}
-.TitleP {
-  align-items: start;
-  justify-content: start;
-  margin-left: 0px;
-  font-size: 20px;
-}
 
-  section{
+  .PenBackround p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22%;
+    font-size: 40px;
+   
+    margin-bottom: 15px;
+  }
+  .TitleP {
+    padding: 0;
+  }
+ 
+  .name-title{
+    margin-top: 30px;
+    padding-top: 0px;
+    margin-left: -20px;
+  }
+  .work-title{
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+
+  section {
+   flex-direction: column;
+    align-items: center;
+  }
+  section p:nth-child(2) {
+    font-size: 10x;
+  }
+  section p:nth-child(3) {
+    font-size: 10x;
+  }
+  .big-blue-div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-  section  p:nth-child(3) {
-    font-size: 12x;
+  .bule-div{
+    display: flex;
+    flex-direction: row;
+    padding:15px;
+    width: 100%;
+  }
+  .bule-continer{
+    width: 50%;
+  }
+  .Bluediv{
+    width: 100px;
+   height: 100px;
+  }
+  .blue-image{
+    width: 70px;
+    height: 70px;
+  }
+  .blue-image:hover{
+    width:90px;
+    height:90px;
   }
 }
-@media screen and (min-width: 481px) and (max-width:1024px){
-  .header p {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .header-menu li a {
     font-size: 25px;
   }
   .PenBackround p {
     margin-left: 90px;
   }
-  .container{
+  .container {
     height: 100%;
   }
-  
-  .TitleP p:nth-child(2) {
+
+  /* .TitleP p:nth-child(2) {
     margin-left: 200px;
-}
-    section{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .Bluediv {
-      width: 200px;
-      height: 200px;
-    }
-    .image{
-      width: 200px;
-      height: 200px;
-      margin-top: 15px;
-    }
-    section  p:nth-child(2) {
+  } */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bluediv {
+    width: 200px;
+    height: 200px;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+  }
+  section p:nth-child(2) {
     font-size: 40px;
   }
-  section  p:nth-child(3) {
+  section p:nth-child(3) {
     font-size: 30px;
   }
+ .Bluediv{
+  width: 150px;
+  height: 150px;
+ }
+ 
+section p:nth-child(2) {
+  font-size: 20px;
 }
+section p:nth-child(3) {
+ 
+  font-size: 18px;
+}
+}
+

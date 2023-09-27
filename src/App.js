@@ -13,7 +13,7 @@ function App() {
         <Headers/>
         <About/>
         <Skills/>
-      <div className="project-container">
+      <div className="project-container" id="project">
       <p className="title">Projects</p>
       
       </div>

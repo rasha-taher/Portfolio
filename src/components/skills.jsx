@@ -11,7 +11,7 @@ import html from "../Svgs/html1.svg";
 
 const Skills= ()=>{
     return( 
-        <div className="skill-section">
+        <div className="skill-section" id="skill">
             <div className="skill1">
                 <p  className="title">Skills</p>
                 <img className="skill" src={html}></img>

@@ -6,7 +6,7 @@ import call from "../Svgs/call.svg";
 import github from "../Svgs/github-blue.svg";
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <p className="title">Contact Me</p>
       <div className="contact-container">
         <div className="inside-contact-container">
