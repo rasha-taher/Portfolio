@@ -9,8 +9,6 @@ function Email() {
 
   const fetchData = () => {
     const apiUrl = "http://localhost:3000/emails/getAll";
-
-    // Make a GET request using Axios
     axios
       .get(apiUrl)
       .then((response) => {
@@ -38,11 +36,11 @@ function Email() {
               <th>Email</th>
               <th>Message</th>
             </tr>
-            {data.map((projets) => (
+            {data.map((emails) => (
               <Temail
-                name={projets.name}
-                email={projets.email}
-                publisher={projets.message}
+                name={emails.name}
+                email={emails.email}
+                message={emails.message}
               />
             ))}
           </table>

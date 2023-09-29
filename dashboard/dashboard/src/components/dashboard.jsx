@@ -5,7 +5,7 @@ import ProjectComponent from "./projects";
 import CVComponent from "./cv";
 
 const Dashboard = () => {
-  const [activeSection, setActiveSection] = useState("email");
+  const [activeSection, setActiveSection] = useState(null);
 
   const handleClick = (section) => {
     setActiveSection(section);
@@ -33,9 +33,15 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {activeSection === "email" && <EmailComponent />}
-      {activeSection === "project" && <ProjectComponent />}
-      {activeSection === "cv" && <CVComponent />}
+      <div id="email" style={{ display: activeSection === "email" ? "block" : "none" }}>
+        <EmailComponent />
+      </div>
+      <div id="project" style={{ display: activeSection === "project" ? "block" : "none" }}>
+        <ProjectComponent />
+      </div>
+      <div id="cv" style={{ display: activeSection === "cv" ? "block" : "none" }}>
+        <CVComponent />
+      </div>
     </div>
   );
 };
