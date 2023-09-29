@@ -39,13 +39,16 @@
     margin-top: 4%;
     margin-bottom: 10%;
     border-radius: 50px;
-    background-color: transparent;
-    border: 1px solid #3066BE;
+    background-color: #3066BE;
     color: white;
     font-size: 15px;
+    border: 1px solid #3066BE;
+    cursor: pointer;
 }
 .dCV:hover{
-    background-color: #3066BE;
+    background-color: transparent;
+    border: 1px solid #3066BE;
     border:0px;
     font-size: 17px;
+    color: #3066BE;
 }
