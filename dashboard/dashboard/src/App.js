@@ -9,6 +9,8 @@ function App() {
     <div className="App">
       <div className="dachboard">
         <Dashboard />
+      </div>
+      <div className="email">
         <Email />
       </div>
     </div>
