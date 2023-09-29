@@ -4,7 +4,7 @@ import "./email.css";
 import Temail from "./Temail";
 import axios from "axios";
 
-function Email() {
+function CV() {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
@@ -31,12 +31,12 @@ function Email() {
     <div>
       <div className="container">
         <div className="email" id="email">
-          <h2>Email</h2>
+          <h2>Upload CV </h2>
           <table className="tEmail">
             <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Message</th>
+              <th>CV</th>
+              <th>CV</th>
+              <th>CV</th>
             </tr>
             {data.map((projets) => (
               <Temail
@@ -52,4 +52,4 @@ function Email() {
   );
 }
 
-export default Email;
+export default CV;

@@ -1,10 +1,10 @@
 import "./email.css";
-const Temail = ({ id, title, description }) => {
+const Temail = ({ name, email, message }) => {
   return (
     <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{description}</td>
+      <td>{name}</td>
+      <td>{email}</td>
+      <td>{message}</td>
     </tr>
   );
 };

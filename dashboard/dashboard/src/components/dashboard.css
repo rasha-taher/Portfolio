@@ -2,10 +2,20 @@
 margin: 0;
 padding: 0;
 }
+hr{
+    margin-left: 15px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
 
-a{
+}
+.menu a{
     text-decoration: none;
     color: white;
+    font-size: 25px;
+    margin-top: 56px;
+    cursor: pointer;
 }
 body{
     background-color:  #1e1e1e;
@@ -25,7 +35,7 @@ p:hover{
     display: flex;
     flex-direction: row;
     width: 20%;
-    height: 100%;
+    height: 610px;
 }
  .header{
     height: 100%;
