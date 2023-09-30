@@ -106,13 +106,14 @@ section p:nth-child(3) {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .big-blue-div{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-bottom: 70px;
-  width: 100%;
+  width:90%;
 }
 .bule-div{
   display: flex;
@@ -125,4 +126,10 @@ section p:nth-child(3) {
   flex-direction: column;
   align-items: center;
   width: 50%;
+}
+.under{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }

@@ -14,7 +14,7 @@ const Contact = () => {
     const emailBody = { name, email, message };
     console.log(emailBody);
     try {
-      const response = await fetch("http://localhost:3000/emails/add", {
+      const response = await fetch("http://localhost:5000/emails/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -36,12 +36,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
-      <p className="title">Contact Me</p>
+    <div id="contact">
+      <div> 
+    <p className="title">Contact Me</p>
+    </div>
       <div className="contact-container">
         <div className="inside-contact-container">
-          <p className="contact-title">Send A Message</p>
           <div className="message-form" action="">
+          <p className="contact-title">Send A Message</p>
             <input
               type="text"
               className="name contact-inp"
@@ -82,35 +84,33 @@ const Contact = () => {
 
               <div className="info">
                 <img src={location} className="svgs" />
-                <p className="get-in-info"> Street, City </p>
+                <p className="get-in-info"> Beirut, Lebanon </p>
               </div>
 
               <div className="info">
                 <img src={mail} className="svgs" />
-                <a href="info@gmail.com" className="get-in-info">
-                  {" "}
-                  info@gmail.com{" "}
+                <a href="mailto:dev.shantkel@gmail.com" className="get-in-info">
+                dev.shantkel@gmail.com
                 </a>
               </div>
 
               <div className="info">
                 <img src={linkedin} className="svgs" />
-                <a href="linkedin.url" className="get-in-info">
-                  {" "}
-                  linkedin.url{" "}
+                <a href="https://www.linkedin.com/in/shant-kel-khacherian-24066a268/" className="get-in-info">
+                  
+                  linkedin.com/shant-kel-khacherian
                 </a>
               </div>
 
               <div className="info">
                 <img src={call} className="svgs" />
-                <p className="get-in-info"> +123 456 789</p>
+                <p className="get-in-info"> +961 71 729 503</p>
               </div>
 
               <div className="info">
                 <img src={github} className="svgs b" />
-                <a href="github.com/name" className="get-in-info">
-                  {" "}
-                  github.com/name{" "}
+                <a href="https://github.com/shantk705" className="get-in-info">
+                github.com/shantk705
                 </a>
               </div>
 
@@ -119,6 +119,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+ 
   );
 };
 export default Contact;
