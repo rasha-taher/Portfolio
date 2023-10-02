@@ -1,5 +1,4 @@
 import React from "react";
-import "./skills.css";
 import figma from "../Svgs/figma1.svg";
 import github from "../Svgs/github1.svg";
 import gitlab from "../Svgs/gitlab1.svg";

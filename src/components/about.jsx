@@ -1,8 +1,6 @@
 import React from "react";
-import "./about.css";
+import '../style/about.css'
 import image from "../Svgs/image.jpg";
-import "../responsive.css";
-
 const About = () => {
   return (
     <div id="about">

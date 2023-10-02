@@ -3,7 +3,8 @@ import location from "../Svgs/location.svg";
 import mail from "../Svgs/email.svg";
 import linkedin from "../Svgs/linkedin.svg";
 import call from "../Svgs/call.svg";
-import github from "../Svgs/github-blue.svg";import React, { useState } from "react";
+import github from "../Svgs/github-blue.svg";
+import React, { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -14,7 +15,7 @@ const Contact = () => {
     const emailBody = { name, email, message };
     console.log(emailBody);
     try {
-      const response = await fetch("http://localhost:5000/emails/add", {
+      const response = await fetch("http://localhost:5000/emails/addEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
