@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
 
-
+    <div className="under">
       <section className="big-blue-div">
         <div className="bule-div">
 
@@ -75,7 +75,9 @@ const Header = () => {
         </div>
         </div>
       </section>
+      </div>
     </div>
+
   );
 };
 export default Header;
