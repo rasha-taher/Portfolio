@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './LoginForm.css';
 import { useNavigate } from 'react-router-dom';
-import Dashboard from './Dashboard';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import '../style/LoginForm.css'
 
 const Login = () => {
   const navigate = useNavigate();

@@ -1,27 +1,23 @@
-import Headers from "./components/Header";
-import Contact from "./components/Contact";
-import Footer from "./components/footer";
-import About from "./components/about";
-import Skills from "./components/skills";
-import ProjectsComponent from "./components/ProjectsComponent";
+import React from 'react';
+import AdminLogin from './components/AdminLogin'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from './components/HomePage';
 
-import "./style/about.css";
-import "./style/App.css";
-import "./style/header.css";
-import "./style/style.css";
-import "./style/responsive.css";
-import "./style/skills.css";
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Headers />
-      <About />
-      <Skills />
-      <ProjectsComponent />
-      <Contact />
-      <Footer />
-    </div>
-  );
-}
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<HomePage />} />
 
+        <Route path="admin" element={<AdminLogin />} />
+        
+
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 export default App;
