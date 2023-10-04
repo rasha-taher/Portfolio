@@ -107,6 +107,8 @@ body{
   justify-content: center;
 }
 .contact-title{
+  margin: auto;
+text-align: center;
 font-size: 30px;
 color: white;
 margin-bottom: 15px;
@@ -145,6 +147,7 @@ font-weight: bold;
 }
 
 .in-touch-message{
+  text-align: left;
   color: white;
   font-size: 20px;
   margin-bottom: 15px;
@@ -194,9 +197,7 @@ footer{
   font-weight: bold;
 }
 
-.info1{
-  margin-left: 35%;
-}
+
 .information-ul{
   list-style: none;
   font-size: 15px;
@@ -212,14 +213,10 @@ footer{
   margin-bottom: 8px;
   
 }
-
 .social-container{
   margin-top: 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-  padding-left: 25px;
 }
 .s1{
   width: 40px;

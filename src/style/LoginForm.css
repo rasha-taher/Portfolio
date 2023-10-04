@@ -1,5 +1,6 @@
 
 .login-form-container {
+  margin: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,22 +20,25 @@
   
   .login-label {
     margin-bottom: 8px;
+    font-size: 25px;
   }
   
   .login-input {
+    width:200px;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 20px;
     margin-top: 5px;
   }
   
   .login-button {
+    width: 100px;
     padding: 10px;
     color: #ffffff;
     cursor: pointer;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
   }
   
   .signup-link {

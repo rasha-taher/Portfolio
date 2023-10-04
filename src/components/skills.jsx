@@ -13,8 +13,8 @@ import css from "../Svgs/css.svg";
 const Skills = () => {
   return (
     <div className="skill-section" id="skill">
+      <p className="title">Skills</p>
       <div className="skill1">
-        <p className="title">Skills</p>
         <img className="skill" src={html}></img>
         <img className="skill" src={javascript2}></img>
         <img className="skill" src={figma}></img>
