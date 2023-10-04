@@ -1,7 +1,4 @@
-body {
-  overflow-x: hidden;
-  background-color: #1e1e1e;
-}
+
 section {
   display: flex;
   flex-direction: row;
