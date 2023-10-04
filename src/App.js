@@ -12,7 +12,6 @@ const App = () => {
 
         <Route path="admin" element={<AdminLogin />} />
         
-
       </Routes>
     </BrowserRouter>
   );
