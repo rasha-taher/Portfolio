@@ -11,14 +11,13 @@ const UpdateProjectForm = () => {
     console.log(e);
     var reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
-    reader.onload = () =>{
+    reader.onload = () => {
       console.log(reader.result);
-      setNewImage(reader.result)
-    }
-    reader.onerror = error=> {
-      console.log("Error: " , error);
-    }
-
+      setNewImage(reader.result);
+    };
+    reader.onerror = (error) => {
+      console.log("Error: ", error);
+    };
   }
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -78,8 +77,8 @@ const UpdateProjectForm = () => {
           accept="image/"
           onChange={convertToBase64}
           type="file"
-         
         ></input>
+        <br />
         <button className="email-name-button" type="submit">
           Update Project
         </button>

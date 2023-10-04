@@ -25,7 +25,7 @@
  .about{
      display: flex;
      width: 90%;  
- 
+     margin-bottom: 70px;
  }
  .image{
      width:50%;

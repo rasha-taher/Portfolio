@@ -10,8 +10,9 @@ body{
 }
 /* Project CSS*/
 .project-container{
+  width: 100%;;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -26,8 +27,16 @@ body{
   margin-top: 15px;
   padding: 15px;
 }
+p{
+  line-height: 1.5;
+}
+.project-image{
+  width:100%;
+  height: 300px;
+}
 .project-title{
   font-size: 25px;
+  text-align: center;
   margin-bottom: 15px;
 }
 .project-image{

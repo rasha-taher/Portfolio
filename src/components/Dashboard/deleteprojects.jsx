@@ -15,10 +15,9 @@ const DeleteProject = () => {
       .then((data) => {
         console.log(data);
         if (data.success) {
-          window.alert("Project deleted successfully!"); 
-        }else {
-          window.alert("Project couldn't be deleted!"); 
-
+          window.alert("Project deleted successfully!");
+        } else {
+          window.alert("Project couldn't be deleted!");
         }
       })
       .catch((error) => {
@@ -29,7 +28,7 @@ const DeleteProject = () => {
   return (
     <div>
       <div className="email" id="email">
-        <h3>Delete Project</h3>
+        <h2>Delete Project</h2>
         <div className="email-search">
           <p className="email-label">
             Enter a Project title you want to delete
@@ -38,7 +37,7 @@ const DeleteProject = () => {
           <input
             className="email-name-search email-search-title"
             placeholder="Enter a Project Title"
-            value={projectTitle} 
+            value={projectTitle}
             onChange={handleInputChange}
           ></input>
           <button className="email-name-button" onClick={handleDeleteProject}>

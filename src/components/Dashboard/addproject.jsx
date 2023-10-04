@@ -9,14 +9,13 @@ const Addproject = () => {
     console.log(e);
     var reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
-    reader.onload = () =>{
+    reader.onload = () => {
       console.log(reader.result);
-      setImage(reader.result)
-    }
-    reader.onerror = error=> {
-      console.log("Error: " , error);
-    }
-
+      setImage(reader.result);
+    };
+    reader.onerror = (error) => {
+      console.log("Error: ", error);
+    };
   }
 
   const handleAddProject = async () => {
@@ -30,7 +29,8 @@ const Addproject = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(projectBody)}
+          body: JSON.stringify(projectBody),
+        }
       );
 
       if (response.ok) {
@@ -47,7 +47,7 @@ const Addproject = () => {
   };
   return (
     <div className="">
-      <h3> Add Project</h3>
+      <h2> Add Project</h2>
       <div className="email-search">
         <p className="email-label">
           {" "}
@@ -61,15 +61,17 @@ const Addproject = () => {
         ></input>
         <input
           className="email-name-search"
-          
           accept="image/"
           onChange={convertToBase64}
           type="file"
-         // onChange={(e) => setImage(e.target.value)}
+          // onChange={(e) => setImage(e.target.value)}
         ></input>
-        { image==="" || image===null ?"":
-        <img width={100} height={100} src={image} alt="project image"></img> }  
-             <textarea
+        {image === "" || image === null ? (
+          ""
+        ) : (
+          <img width={100} height={100} src={image} alt="project image"></img>
+        )}
+        <textarea
           className="add-project-desc"
           placeholder="Enter Description for your project"
           onChange={(e) => setDescription(e.target.value)}
