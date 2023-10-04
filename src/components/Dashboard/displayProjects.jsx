@@ -21,7 +21,7 @@ const DisplayProjects = () => {
   useEffect(() => {
     fetchData();
     console.log(data);
-  },[data]);
+  },[]);
 
   return (
     <div className="project-container">

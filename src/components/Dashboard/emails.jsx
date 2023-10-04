@@ -38,7 +38,7 @@ function Emails() {
     fetchData();
     
     console.log(data);
-  }, [data]);
+  }, []);
 
   return (
     <div id="emails">

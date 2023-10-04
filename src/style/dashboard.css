@@ -106,7 +106,7 @@
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     background-color: #3066be;
     border-radius: 25px;

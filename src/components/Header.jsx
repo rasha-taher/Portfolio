@@ -30,7 +30,7 @@ const Header = () => {
 
         <div className="bule-continer">
           <div className="Bluediv">
-            <img src={Fast} className="blue-image"></img>
+            <img src={Fast} className="blue-image" alt="Header image"></img>
           </div>
           <p className="sub-titles">Fast</p>
           <p>
