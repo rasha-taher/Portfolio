@@ -44,7 +44,7 @@ const Login = () => {
         </label>
         <label className='login-label'>
           Password:<br></br>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter your Password' />
+          <input className='login-input' type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter your Password' />
         </label>
         <button className='login-button'  type="submit" style={{ backgroundColor: '#3066BE' }} 
         preventDefault>

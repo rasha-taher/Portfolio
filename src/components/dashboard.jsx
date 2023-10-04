@@ -18,7 +18,7 @@ function Dashboard( ) {
         setActiveSection("cv");
         break;
       default:
-        setActiveSection(null);
+        setActiveSection("default");
     }
   };
   return (
@@ -41,6 +41,9 @@ function Dashboard( ) {
       </div>
       <div id="dash-cv" style={{ display: activeSection === "cv" ? "block" : "none" }}>
         <Cv />
+      </div>
+      <div id="dash-default" style={{ display: activeSection === "default" ? "block" : "none" }}>
+       <h2> Welcome </h2>
       </div>
     </div>
       </div>

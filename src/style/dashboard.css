@@ -102,12 +102,11 @@
     font-size: 30px;
     margin-top: 20px;
   }
-  .projects {
+  .dash-projects {
     width: fit-content;
     height: fit-content;
     display: flex;
-  
-    flex-direction: column;
+    flex-direction: row;
     color: white;
     background-color: #3066be;
     border-radius: 25px;
@@ -115,15 +114,15 @@
     padding: 15px;
     margin-left: 10px;
   }
-  .project-title {
+  .dash-project-title {
     font-size: 25px;
     margin-bottom: 15px;
     font-weight: bold;
   }
-  .project-image {
+  .dash-project-image {
     margin-bottom: 15px;
   }
-  .project-desc {
+  .dash-project-desc {
     font-size: 20px;
    
   }
