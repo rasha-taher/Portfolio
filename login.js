@@ -12,11 +12,8 @@ const Login = () => {
       <Routes>
       <Route path="/" element={<App />} />
       <Route path="/dashboard/cv" element={<CV />} />
-
         <Route path="admin" element={<AdminLogin />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        
-
       </Routes>
     </BrowserRouter>
   );

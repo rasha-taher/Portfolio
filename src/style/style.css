@@ -1,9 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+
 }
 body{
   background-color: #1E1E1E;
+  font-family: Gill Sans, sans-serif;
 }
 /* Project CSS*/
 .project-container{
@@ -18,7 +20,7 @@ body{
   display: flex;
   flex-direction: column;
   color: white;
-  background-color:#222020;
+  background-color:#3d4146;
   border-radius: 25px;
   margin-top: 15px;
   padding: 15px;
@@ -124,7 +126,7 @@ font-weight: bold;
   width: 400px;
   height: 30px;
   margin-bottom: 15px;
-
+  padding: 10px;
 }
 .message-box{
   resize: none;
@@ -176,7 +178,7 @@ footer{
   background-color: #3066BE;
   display: flex;
   flex-direction:row;
-
+  padding: 15px;
 }
 .footer-container{
   width: 33.33%;
