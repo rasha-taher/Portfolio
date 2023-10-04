@@ -8,7 +8,7 @@ import "../style/header.css";
 import "../style/style.css";
 import "../style/responsive.css";
 import "../style/skills.css";
-function App() {
+function HomePage() {
   return (
     <div className="App">
         <Headers/>
@@ -21,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;

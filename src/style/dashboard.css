@@ -1,0 +1,155 @@
+
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+  .side-menu {
+    padding: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dash-title {
+    color: #3066be;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .dash-menu {
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dash-menu-item {
+    margin-bottom: 20px;
+    border: 1px solid #3066be;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .dash-menu-item:hover {
+    background-color: #3066be;
+  }
+  .dash-content {
+    width: 70%;
+    padding: 25px;
+  }
+  
+  hr {
+    transform: rotate(180deg);
+  }
+  
+  table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 750px;
+    height: 100px;
+    text-align: center;
+  }
+  .email-td-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  table,
+  td,
+  th {
+    border: 1px solid #3066be;
+    color: white;
+    padding: 10px;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .email-label {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .email-name-search {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #3066be;
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+  .email-name-button {
+    width: 150px;
+    height: 35px;
+    background-color: #3066be;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .email-td-data {
+    font-size: 20px;
+  }
+  
+  .email-p {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .projects {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+  
+    flex-direction: column;
+    color: white;
+    background-color: #3066be;
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 15px;
+    margin-left: 10px;
+  }
+  .project-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .project-image {
+    margin-bottom: 15px;
+  }
+  .project-desc {
+    font-size: 20px;
+   
+  }
+  h3 {
+    color: white;
+  }
+  
+  .add-project-desc {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #3066be;
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 15px;
+    resize: none;
+    background-color: transparent;
+    }
+    .email-search {
+      display: flex;
+      flex-direction: column;
+    }
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+      

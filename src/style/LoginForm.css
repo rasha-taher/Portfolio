@@ -1,33 +1,28 @@
 /* LoginForm.css */
-body {
-    margin: 0;
+
+.login-form-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #0F0E0E;
-  }
-  
-  .login-form-container {
-    width: 100%;
-    max-width: 400px;
     padding: 20px;
-    background-color: #0F0E0E;
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  form {
+  .login-form {
     display: flex;
     flex-direction: column;
   }
   
-  label {
+  .login-label {
     margin-bottom: 8px;
   }
   
-  input {
+  .login-input {
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -35,7 +30,7 @@ body {
     margin-top: 5px;
   }
   
-  button {
+  .login-button {
     padding: 10px;
     color: #ffffff;
     cursor: pointer;
@@ -68,4 +63,3 @@ width: 80%;
       max-width: 100%;
       }
   }
-  

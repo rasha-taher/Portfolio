@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../style/LoginForm.css'
 
 const Login = () => {
@@ -33,25 +31,25 @@ const Login = () => {
       setError('Internal Server Error');
     }
   };
-  
+
   return (
     <div className="login-form-container">
-      <form onSubmit={(e) => { e.preventDefault(); handleLogin(); }}>
+      <form className='login-form'onSubmit={(e) => { e.preventDefault(); handleLogin(); }}>
 
         {error && <p style={{ color: 'red' }}>{error}</p>}
 
-        <label>
+        <label className='login-label'>
           Username:<br></br>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Enter your Email' />
+          <input className='login-input' type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Enter your Email' />
         </label>
-        <label>
+        <label className='login-label'>
           Password:<br></br>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter your Password' />
         </label>
-        <button type="submit" style={{ backgroundColor: '#3066BE' }} 
+        <button className='login-button'  type="submit" style={{ backgroundColor: '#3066BE' }} 
         preventDefault>
           Login
-        </button>
+        </button> 
       </form>
     </div>
   );
