@@ -7,6 +7,19 @@ const UpdateProjectForm = () => {
   const [newDescription, setNewDescription] = useState("");
   const [newImage, setNewImage] = useState("");
 
+  function convertToBase64(e) {
+    console.log(e);
+    var reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = () =>{
+      console.log(reader.result);
+      setNewImage(reader.result)
+    }
+    reader.onerror = error=> {
+      console.log("Error: " , error);
+    }
+
+  }
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
   };
@@ -61,11 +74,12 @@ const UpdateProjectForm = () => {
         />
         <p className="email-label">New Image URL:</p>
         <input
-          className="add-project-desc"
-          type="text"
-          value={newImage}
-          onChange={(e) => setNewImage(e.target.value)}
-        />
+          className="email-name-search"
+          accept="image/"
+          onChange={convertToBase64}
+          type="file"
+         
+        ></input>
         <button className="email-name-button" type="submit">
           Update Project
         </button>
