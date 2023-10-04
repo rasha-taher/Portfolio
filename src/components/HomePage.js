@@ -4,11 +4,10 @@ import Footer from "./footer"
 import About from "./about"
 import Skills from "./skills"
 import ProjectsComponent from "./ProjectsComponent";
-import "./style/about.css";
-import "./style/header.css";
-import "./style/style.css";
-import "./style/responsive.css";
-import "./style/skills.css";
+import "../style/header.css";
+import "../style/style.css";
+import "../style/responsive.css";
+import "../style/skills.css";
 function App() {
   return (
     <div className="App">
