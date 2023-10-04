@@ -11,9 +11,10 @@
     margin-right: 4%;
     filter: grayscale(100%);
 }
-.skill1{
+.skill1,.skill2{
     margin-top: 70px;
     margin-bottom: 70px;
+    text-align: center;
 }
 .skill:hover {
     filter: grayscale(0%);
