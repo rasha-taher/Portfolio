@@ -12,9 +12,9 @@ const Cv = () => {
       });
 
       if (response.ok) {
-        console.log("CV Uploaded successfully");
+       window.alert("CV Uploaded successfully");
       } else {
-        console.error("Failed to upload CV");
+        window.alert("Failed to upload CV");
       }
     } catch (error) {
       console.error("Error uploading CV:", error);
