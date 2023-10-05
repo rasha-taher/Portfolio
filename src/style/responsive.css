@@ -146,16 +146,14 @@
       justify-content: center;
       margin-bottom: 5px;
     }
-    .slide{
-      width:max-content;
-    }
+  
     .text{
       height: 400px;
     }
     .in-touch-message{text-align: center;
     width: 100%;}
     .projects{
-      width: max-content;
+      width: 300px;
       height: 400px;
     }
    
