@@ -46,9 +46,10 @@
   }
   .header-menu {
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 0px;
   }
   .header-menu li {
+    font-size: 18px;
     margin: 5px;
   }
   .header-menu li a {
@@ -139,6 +140,7 @@
   }
   footer {
     flex-direction: column;
+    margin-top: 10px;
   }
   .footer-container {
     width: 100%;
