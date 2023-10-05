@@ -14,13 +14,16 @@ const Contact = () => {
     const emailBody = { name, email, message };
     console.log(emailBody);
     try {
-      const response = await fetch("http://localhost:5000/emails/addEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(emailBody),
-      });
+      const response = await fetch(
+        "https://portfolio-back-end-ija7.onrender.com/emails/addEmail",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(emailBody),
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();

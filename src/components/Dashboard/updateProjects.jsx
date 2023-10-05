@@ -17,7 +17,7 @@ const UpdateProjectForm = () => {
     };
     reader.onerror = (error) => {
       //console.log("Error: ", error);
-      window.alert("Error: ", error)
+      window.alert("Error: ", error);
     };
   }
   const handleTitleChange = (e) => {
@@ -29,7 +29,7 @@ const UpdateProjectForm = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/projects/update/${title}`,
+        `https://portfolio-back-end-ija7.onrender.com/projects/update/${title}`,
         {
           title: newTitle,
           description: newDescription,

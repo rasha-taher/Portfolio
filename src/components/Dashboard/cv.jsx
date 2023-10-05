@@ -6,13 +6,16 @@ const Cv = () => {
     formData.append("file", event.target.files[0]);
 
     try {
-      const response = await fetch("http://localhost:5000/upload", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await fetch(
+        "https://portfolio-back-end-ija7.onrender.com/upload",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       if (response.ok) {
-       window.alert("CV Uploaded successfully");
+        window.alert("CV Uploaded successfully");
       } else {
         window.alert("Failed to upload CV");
       }

@@ -1,11 +1,11 @@
 const Projects = ({ title, image, description }) => {
-
-
   const handleDeleteProject = () => {
-    
-    fetch(`http://localhost:5000/projects/deleteProject/${title}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://portfolio-back-end-ija7.onrender.com/projects/deleteProject/${title}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

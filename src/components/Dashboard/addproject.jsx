@@ -14,7 +14,7 @@ const Addproject = () => {
       setImage(reader.result);
     };
     reader.onerror = (error) => {
-      window.alert("Error: ", error)
+      window.alert("Error: ", error);
       console.log("Error: ", error);
     };
   }
@@ -24,7 +24,7 @@ const Addproject = () => {
     console.log(projectBody);
     try {
       const response = await fetch(
-        "http://localhost:5000/projects/addProject",
+        "https://portfolio-back-end-ija7.onrender.com/projects/addProject",
         {
           method: "POST",
           headers: {

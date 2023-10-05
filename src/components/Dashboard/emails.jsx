@@ -8,7 +8,8 @@ function Emails() {
   const [data2, setData2] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:5000/emails/getAllEmail";
+    const apiUrl =
+      "https://portfolio-back-end-ija7.onrender.com/emails/getAllEmail";
     axios
       .get(apiUrl)
       .then((response) => {
@@ -36,7 +37,7 @@ function Emails() {
 
   useEffect(() => {
     fetchData();
-    
+
     console.log(data);
   }, []);
 

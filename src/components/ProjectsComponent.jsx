@@ -1,11 +1,12 @@
 import ProjectSlider from "../components/ProjectSlider";
 import React, { useState, useEffect } from "react";
-import axios from 'axios'
+import axios from "axios";
 const ProjectsComponent = () => {
-    const [data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:5000/projects/getAllProjects";
+    const apiUrl =
+      "https://portfolio-back-end-ija7.onrender.com/projects/getAllProjects";
     axios
       .get(apiUrl)
       .then((response) => {

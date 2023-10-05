@@ -7,7 +7,8 @@ const DisplayProjects = () => {
   const [data, setData] = useState([]);
 
   const fetchData = () => {
-    const apiUrl = "http://localhost:5000/projects/getAllProjects";
+    const apiUrl =
+      "hhttps://portfolio-back-end-ija7.onrender.com/projects/getAllProjects";
     axios
       .get(apiUrl)
       .then((response) => {
