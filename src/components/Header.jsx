@@ -47,7 +47,9 @@ const Header = () => {
                 <img src={Fast} className="blue-image" alt="Header image"></img>
               </div>
               <p className="sub-titles">Fast</p>
-              <p>Fast load times and lag free interaction my highes priority</p>
+              <p className="fast">
+                Fast load times and lag free interaction my highes priority
+              </p>
             </div>
 
             <div className="bule-continer">
