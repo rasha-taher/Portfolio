@@ -146,7 +146,7 @@ font-weight: bold;
   padding: 10px;
 }
 .message-box{
-margin: auto;
+margin-bottom: 15px;
   resize: none;
   width: 400px;
   height: 110px;

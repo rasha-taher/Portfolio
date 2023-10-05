@@ -6,7 +6,7 @@ import DisplayProject from './displayProjects'
 import UpdateProject from './updateProjects'
 
 const Projects = () => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("display");
 
   const handleClick = (section) => {
     setActiveSection(section);
@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="email" id="projects">
           <h2>Projects</h2>
           <div className="projects-buttons">
-            {["display", "add", "delete", "update"].map(section => (
+            {["display", "add", "update"].map(section => (
               <button
                 key={section}
                 className="email-name-button"
@@ -32,7 +32,7 @@ const Projects = () => {
           <div className='dash-content'>
             {activeSection === "display" && <DisplayProject />}
             {activeSection === "add" && <AddProject />}
-            {activeSection === "delete" && <DeleteProject />}
+           
             {activeSection === "update" && <UpdateProject />}
           </div>
         </div>

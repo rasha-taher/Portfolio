@@ -4,7 +4,7 @@ import Projects from'./Dashboard/projects'
 import { useState } from "react";
 ;
 function Dashboard( ) {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("default");
 
   const handleClick = (section) => {
     switch(section) {
@@ -42,8 +42,8 @@ function Dashboard( ) {
       <div id="dash-cv" style={{ display: activeSection === "cv" ? "block" : "none" }}>
         <Cv />
       </div>
-      <div id="dash-default" style={{ display: activeSection === "default" ? "block" : "none" }}>
-       <h2> Welcome </h2>
+      <div id="default" style={{ display: activeSection === "default" ? "block" : "none" }}>
+       <h2 className='default-dash-title'> Welcome to the dashboard </h2>
       </div>
     </div>
       </div>

@@ -5,19 +5,19 @@
   }
   .side-menu {
     padding: 15px;
-    width: 30%;
+    width: 15%;
     display: flex;
     flex-direction: column;
   }
   .dash-title {
     color: #3066be;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 50px;
   }
   .dash-menu {
     color: white;
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,11 +25,19 @@
   }
   .dash-menu-item {
     margin-bottom: 20px;
-    border: 1px solid #3066be;
+    /* border: 1px solid #3066be; */
     width: 150px;
     cursor: pointer;
     text-align: center;
   }
+  .dash-menu-item::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #3066be; /* You can adjust the color and thickness here */
+    margin-top: 5px; /* Adjust the spacing between the li text and the line */
+    width: 100%;
+  }
+  
   .dash-menu-item:hover {
     background-color: #3066be;
   }
@@ -116,11 +124,12 @@
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: #3066be;
+    background-color: #131416;
     border-radius: 25px;
     margin-top: 15px;
     padding: 15px;
     margin-left: 10px;
+    
   }
   .dash-project-title {
     font-size: 25px;
