@@ -14,6 +14,7 @@ const Addproject = () => {
       setImage(reader.result);
     };
     reader.onerror = (error) => {
+      window.alert("Error: ", error)
       console.log("Error: ", error);
     };
   }

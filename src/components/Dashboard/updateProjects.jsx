@@ -12,11 +12,12 @@ const UpdateProjectForm = () => {
     var reader = new FileReader();
     reader.readAsDataURL(e.target.files[0]);
     reader.onload = () => {
-      console.log(reader.result);
+      //console.log(reader.result);
       setNewImage(reader.result);
     };
     reader.onerror = (error) => {
-      console.log("Error: ", error);
+      //console.log("Error: ", error);
+      window.alert("Error: ", error)
     };
   }
   const handleTitleChange = (e) => {
