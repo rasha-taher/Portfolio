@@ -149,6 +149,11 @@
     .slide{
       width:max-content;
     }
+    .text{
+      height: 400px;
+    }
+    .in-touch-message{text-align: center;
+    width: 100%;}
     .projects{
       width: max-content;
       height: 400px;

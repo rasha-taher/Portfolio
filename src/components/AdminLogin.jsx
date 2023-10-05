@@ -42,7 +42,8 @@ const Login = () => {
         }}
       >
         {error && <p style={{ color: "red" }}>{error}</p>}
-
+        <h2>Login to dashboard:</h2>
+        <br />
         <label className="login-label">
           Username:<br></br>
           <input

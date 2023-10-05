@@ -21,11 +21,12 @@ const DisplayProjects = () => {
   useEffect(() => {
     fetchData();
     console.log(data);
-  },[]);
+  }, []);
 
   return (
-    <div className="project-container">
-      
+    <div>
+      <h2>Display all projects:</h2>
+      <div className="project-container">
         {data.map((projects) => (
           <Tprojects
             title={projects.title}
@@ -34,7 +35,7 @@ const DisplayProjects = () => {
           />
         ))}
         ;
-      
+      </div>
     </div>
   );
 };
