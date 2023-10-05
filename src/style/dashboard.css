@@ -13,6 +13,7 @@
     color: #3066be;
     font-size: 40px;
     margin-bottom: 50px;
+    cursor: pointer;
   }
   .dash-menu {
     color: white;
@@ -129,7 +130,7 @@
     margin-top: 15px;
     padding: 15px;
     margin-left: 10px;
-    
+
   }
   .dash-project-title {
     font-size: 25px;

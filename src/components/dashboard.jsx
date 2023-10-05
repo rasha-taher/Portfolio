@@ -24,7 +24,7 @@ function Dashboard( ) {
   return (
     <div className="Dashboard">
       <div className='side-menu'>
-        <p className='dash-title'> Dashboard</p>
+        <p className='dash-title'onClick={() => handleClick("default")}> Dashboard</p>
         <ul className='dash-menu'>
           <li className='dash-menu-item' onClick={() => handleClick("email")}>Emails</li>
           <li className='dash-menu-item'onClick={() => handleClick("project")}>Projects</li>
