@@ -21,7 +21,7 @@ const Login = () => {
       if (response.ok) {
         alert("Admin logged in");
         console.log("Login successful");
-        navigate("/dashboard");
+        navigate("/admin/dashboard");
       } else {
         const data = await response.json();
         setError(data.message);
