@@ -1,7 +1,5 @@
-// ProjectSlider.js
 import React, { useState } from 'react';
 import Projects from '../components/project';
-
 
 const ProjectSlider = ({ projects }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,10 +11,12 @@ const ProjectSlider = ({ projects }) => {
     const prevProject = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
     }
+    
 
     return (
         <div className="project-slider">
-            <div className="slider-container" style={{ transform: `translateX(-${currentIndex * 25}%)` }}>
+            <div className="slider-container" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+
                 {projects.map((project, index) => (
                     <div key={index} className="slide">
                         <Projects {...project} />

@@ -19,7 +19,7 @@ const ProjectsComponent = () => {
   useEffect(() => {
     fetchData();
     console.log(data);
-  }, [data]);
+  }, []);
 
   return (
     <div>
