@@ -43,7 +43,7 @@
     background-color: #3066be;
   }
   .dash-content {
-    width: 70%;
+    width: 100%;
     padding: 25px;
   }
   
@@ -98,6 +98,9 @@
     color: white;
     margin-bottom: 10px;
     background-color: transparent;
+  }
+  .displayProjects{
+    width: 100%;
   }
   .email-name-button {
     width: 150px;
@@ -166,6 +169,8 @@
       flex-direction: column;
     }
     .project-container {
+      width: 100%;
+      text-align: left;
       display: flex;
       flex-direction: row;
       gap: 10px;

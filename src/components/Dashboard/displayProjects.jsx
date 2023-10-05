@@ -24,7 +24,7 @@ const DisplayProjects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="displayProjects">
       <h2>Display all projects:</h2>
       <div className="project-container">
         {data.map((projects) => (
