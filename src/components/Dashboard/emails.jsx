@@ -22,7 +22,7 @@ function Emails() {
   };
   const handleButtonClick = () => {
     const name = document.querySelector(".email-name-search").value;
-    const apiUrl = `http://localhost:5000/emails/getEmailByName/${name}`;
+    const apiUrl = `https://portfolio-back-end-ija7.onrender.com/emails/getEmailByName/${name}`;
 
     axios
       .get(apiUrl)
